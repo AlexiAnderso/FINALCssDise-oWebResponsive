@@ -8,56 +8,76 @@ body{
 
 header{
   width: 100%;
-  height: 10%;
+  height: 75px;
   background-color: #5b7989;
   border-radius: 10px 10px 0 0;
+  /*padding: 1vh 1vw;*/
 }
 
-#contenedor{
-  display: flex;
-  flex-direction: column;
-}
-
-#cabecera h1{
-  float: left;
-  font-size: 2.3em;
-  padding: 0px 15px;
-}
-
-nav{
-  width: 100%;
-}
-
-#menu ul{
-  list-style-type: none;
+section{
+  padding: 0;
   margin: 0;
-  text-align: right;
 }
 
-#menu ul li a{
-  float: right;
-  display: block;
-  margin: 0px 9px;
-  padding: 35px 30px 0px 0px;
-  height: 100%;
-  text-decoration: none;
-  color: inherit;
-}
-
-
-#contenedor{
+#contenido{
   width: 70%;
   height: 900px;
   margin-left: 15%;
   display: block;
   background-color: #02010a;
   position: sticky;
+  flex-direction: column;
 }
+
+/*ESTILO PARA EL TITULO DE LA PAGINA*/
+#cabecera h1{
+  float: left;
+  font-size: 2.3em;
+  padding: 0px 15px;
+  text-shadow: 2px 2px #02010a;
+}
+
+/*HACIENDO UN MENU EN LA CABECERA*/
+nav{
+  width: 100%;
+}
+
+#menu ul{
+  margin: 0;
+  padding: 0;
+  float: right;
+  margin: 40px 0px 0px 0px;
+  padding:  0px 20px 0px 0px;;
+}
+
+#menu ul li{
+  display: inline;
+}
+
+#menu ul li a{
+  margin: 0px 0px 0px 30px;
+  padding: 0;
+  color: inherit;
+  font-size: 1.3em;
+}
+
+#menu ul li a:firts-chield{
+  text-decoration: none !important;
+}
+
 
 #divCentral{
   width:100%;
   height:400px;
   background-color:#82c3a6;
+}
+
+#divCentralPaisajes{
+  width:100%;
+  height: 400px;
+  background-color:#d5c75f;
+  display:block;
+  flex-flow: row wrap;
 }
 
 #divCentral img{
@@ -138,14 +158,11 @@ nav{
   animation-duration: 2s;
 }
 
-#divSecundaria p a{
-  font-family: inherit;
-  color: inherit;
-}
-
 #divSecundaria p{
   text-align: center;
-
+  font-family: inherit ;
+  color: black;
+  font-weight: bold;
 }
 
 footer{
@@ -154,7 +171,7 @@ footer{
   border-radius:0 0 10px 10px;
   background-color: #C6d5c5;
   color: black;
-  text-align: center;
+  text-align: left;
 }
 
 #footerIzquierda{
@@ -162,19 +179,26 @@ footer{
   width: 20%;
   margin-left: 40px;
 }
+
 #footerICentro{
-float: left;
-width: 20%;
-margin-left: 40px;
-display: inline;
+  float: left;
+  width: 20%;
+  margin-left: 40px;
+  display: inline;
 }
+
 #footerDCentro{
   float: left;
   width: 20%;
   margin-left: 40px;
 }
+
 #footerDerecha{
   float: left;
   width: 20%;
   margin-left: 40px;
+}
+
+@media (min-width:900px) {
+
 }
